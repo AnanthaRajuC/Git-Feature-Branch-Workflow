@@ -13,7 +13,7 @@
 1. `git checkout -b branchName`
 - create and switch to a branch called branchName
 
-2. ``git push` -u origin branchName`
+2. `git push` -u origin branchName`
 - links local branchName with remote corresponding branch
 - push local branch to remote repository for the first time (first time only)
 
