@@ -13,7 +13,7 @@
 1. `git checkout -b branchName`
 - create and switch to a branch called branchName
 
-2. `git push -u origin branchName`
+2. ``git push` -u origin branchName`
 - links local branchName with remote corresponding branch
 - push local branch to remote repository for the first time (first time only)
 
@@ -24,7 +24,7 @@
 1. `git check out master`
 - point local environment to master branch
 
-2. `git pull`
+2. ``git pull``
 - ensure local copy of our master branch has all latest changes from remote repository
 
 3. `git merge branchName`
@@ -32,7 +32,7 @@
 
 ##### now local master is up-to-date
 
-4. `git push`
+4. ``git push``
 - push local master to remote master
 
 ----------------------------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git
 
-$ git clone https://github.com/AnanthaRajuC/Git-Feature-Branch-Workflow.git
+$ `git clone https://github.com/AnanthaRajuC/Git-Feature-Branch-Workflow.git`
 
 Cloning into 'Git-Feature-Branch-Workflow'...
 remote: Enumerating objects: 4, done.
@@ -52,42 +52,42 @@ Unpacking objects: 100% (4/4), done.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git
 
-$ ls
+$ `ls`
 
 Git-Feature-Branch-Workflow/
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git
 
-$ cd Git-Feature-Branch-Workflow/
+$ `cd Git-Feature-Branch-Workflow/`
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ ls
+$ `ls`
 
 LICENSE  README.md
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git branch
+$ `git branch`
 
 * master
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git checkout -b feature1
+$ `git checkout -b feature1`
 
 Switched to a new branch 'feature1'
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git branch
+$ `git branch`
 
 * feature1
   master
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git push -u origin feature1
+$ ``git push` -u origin feature1`
 
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
@@ -100,13 +100,13 @@ Branch 'feature1' set up to track remote branch 'feature1' from 'origin'.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git status
+$ `git status`
 
 On branch feature1
 Your branch is up to date with 'origin/feature1'.
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "`git add .`file>..." to include in what will be committed)
 
         feature1.txt
 
@@ -114,11 +114,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git add .
+$ `git add .`
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git status
+$ `git status`
 
 On branch feature1
 Your branch is up to date with 'origin/feature1'.
@@ -131,7 +131,7 @@ Changes to be committed:
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git commit -m "ADD feature1.txt"
+$ `git commit -m "ADD feature1.txt"`
 
 [feature1 181754f] ADD feature1.txt
  1 file changed, 1 insertion(+)
@@ -139,37 +139,37 @@ $ git commit -m "ADD feature1.txt"
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git status
+$ `git status`
 
 On branch feature1
 Your branch is ahead of 'origin/feature1' by 1 commit.
-  (use "git push" to publish your local commits)
+  (use "`git push`" to publish your local commits)
 
 nothing to commit, working tree clean
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature1)
 
-$ git checkout master
+$ `git checkout master`
 
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git branch
+$ `git branch`
 
   feature1
 * master
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git pull
+$ `git pull`
 
 Already up to date.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git merge feature1
+$ `git merge feature1`
 
 Updating d1297aa..181754f
 Fast-forward
@@ -179,7 +179,7 @@ Fast-forward
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git push
+$ `git push`
 
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -194,20 +194,20 @@ To https://github.com/AnanthaRajuC/Git-Feature-Branch-Workflow.git
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git branch
+$ `git branch`
 
   feature1
 * master
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git checkout -b feature2
+$ `git checkout -b feature2`
 
 Switched to a new branch 'feature2'
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git branch
+$ `git branch`
 
   feature1
 * feature2
@@ -215,7 +215,7 @@ $ git branch
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git push -u origin feature2
+$ `git push` -u origin feature2
 
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
@@ -228,13 +228,13 @@ Branch 'feature2' set up to track remote branch 'feature2' from 'origin'.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git status
+$ `git status`
 
 On branch feature2
 Your branch is up to date with 'origin/feature2'.
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "`git add .`file>..." to include in what will be committed)
 
         feature2.txt
 
@@ -242,11 +242,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git add .
+$ `git add .`
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git status
+$ `git status`
 
 On branch feature2
 Your branch is up to date with 'origin/feature2'.
@@ -259,7 +259,7 @@ Changes to be committed:
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git commit -m "ADD feature2.txt"
+$ `git commit -m "ADD feature2.txt"`
 
 [feature2 ac54f45] ADD feature2.txt
  1 file changed, 1 insertion(+)
@@ -267,24 +267,24 @@ $ git commit -m "ADD feature2.txt"
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git status
+$ `git status`
 
 On branch feature2
 Your branch is ahead of 'origin/feature2' by 1 commit.
-  (use "git push" to publish your local commits)
+  (use "`git push`" to publish your local commits)
 
 nothing to commit, working tree clean
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (feature2)
 
-$ git checkout master
+$ `git checkout master`
 
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git branch
+$ `git branch`
 
   feature1
   feature2
@@ -292,13 +292,13 @@ $ git branch
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git pull
+$ `git pull`
 
 Already up to date.
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git merge feature2
+$ `git merge feature2`
 
 Updating 181754f..ac54f45
 Fast-forward
@@ -308,17 +308,17 @@ Fast-forward
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git status
+$ `git status`
 
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
+  (use "`git push`" to publish your local commits)
 
 nothing to commit, working tree clean
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git branch
+$ `git branch`
 
   feature1
   feature2
@@ -326,7 +326,7 @@ $ git branch
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git push
+$ `git push`
 
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -340,7 +340,7 @@ To https://github.com/AnanthaRajuC/Git-Feature-Branch-Workflow.git
 
 johndoe@lp28 MINGW64 /c/John-Doe/eclipse-workspace/WS_E_2020/Learning-Git/Git-Feature-Branch-Workflow (master)
 
-$ git status
+$ `git status`
 
 On branch master
 Your branch is up to date with 'origin/master'.
